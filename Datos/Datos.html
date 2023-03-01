@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="/Register/style.css">
+    <link rel="stylesheet" href="/Datos/Datos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7375077ed1.js" crossorigin="anonymous"></script>
-    <title>Register</title>
+    <title>Datos</title>
 </head>
 <body>
-
 <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -40,40 +38,30 @@
       </nav>
     <!--end navbar-->
 
-     <!--Form-Login-Sigin-->
+    <!--Modal-->
+      <div class="window-notice" id="window-notice">
+        <a href="#" class="window-bg"></a>
+        <div class="content">
+          <span class="close-button">&times;</span>
+          <div class="content-text">¡BIENVENIDO!</div>
+          
+        </div>
+      </div>
+      <!--<End modal-->
       
+     <!--Form-Login-Sigin-->
      <form action="" method="post" class="formulario" id="form">
-
-        <h1>Crear una Cuenta</h1>
+        <h1>Datos recogidos</h1>
+        <p class="warnings" id="warnings"></p>
         <div class="contenedor">
-
           <div class="input-contenedor">
-            <i class="fa-solid fa-user icon"></i>
-            <input id="name" name="" type="text" placeholder="Nombre completo">
+            <div id="app"></div>
           </div>
-
-          <div class="input-contenedor">
-            <i class="fa-solid fa-envelope icon"></i>
-            <input id="email" name="" type="text" placeholder="Correo Electrónico">
-          </div>
-
-          <div class="input-contenedor">
-            <i class="fa-solid fa-key icon"></i>
-            <input id="pass" name="" type="password" placeholder="Contraseña">
-          </div>
-
-          <input type="submit" value="Continuar" class="button">
-          <p class="warnings" id="warnings"></p>
-
-          <p>Al registrarse aceptas Terminos y condiciones</p>
-          <p>¿Ya tienes cuenta? <a class="link" href="/login/login.html">Iniciar Sesión</a></p>
-
+          <!--<p>Terminos y condiciones <a class="link" href="">Click aqui</a></p>-->
         </div>
       </form>
-
     <!--end form-Login-Sigin-->
 
-    <script src="/Register/index.js "></script>
-    
+    <script src="/Datos/Datos.js "></script>
 </body>
 </html>

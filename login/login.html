@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7375077ed1.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--end navbar-->
+
+ <!--iniciar sesión-->
+
+ <form action="/login" method="post" class="formulario">
+
+    <h1>Iniciar Sesión</h1>
+    <div class="contenedor">
+
+      <div class="input-contenedor">
+        <i class="fa-solid fa-envelope icon"></i>
+        <input id="email" name="email" type="text" placeholder="Correo Electrónico">
+      </div>
+
+      <div class="input-contenedor">
+        <i class="fa-solid fa-key icon"></i>
+        <input id="pass" name="pass" type="password" placeholder="Contraseña">
+      </div>
+
+      <input type="submit" value="Continuar" class="button" onclick="login()" hr>
+      <p>Al registrarse aceptas Terminos y condiciones</p>  
+      <p>¿No tienes Cuenta? <a class="link" href="/Register/index.html">Registrate</a></p>
+    
+    </div>
+  </form>
+<!--End iniciar sesión-->
+
+<script src="/login/login.js"></script>
+
+</body>
+</html>
