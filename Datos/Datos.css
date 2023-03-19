@@ -85,8 +85,13 @@ p{
 }
 
 .window-notice .content {
-    background: #fff;
-    border-radius: 2px;
+    /*background: #fff;*/
+    background-image: url(../img/flor_cerezo_img.jpg);
+    background-position: center center;
+    background-size: contain;
+    /*background-repeat: no-repeat;*/
+    outline-style: auto;
+    border-radius: 20px;
     box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
     box-sizing: content-box;
     display: flex;
@@ -104,6 +109,7 @@ p{
 .content-text {/*titulo de bienvenida de la modal*/
     font-size: 3rem;
     text-align: center;
+    color: black;
 }
 
 /*boton de cerrar la modal*/
