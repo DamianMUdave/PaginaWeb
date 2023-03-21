@@ -38,19 +38,19 @@
 
  <!--iniciar sesión-->
 
- <form action="/login" method="post" class="formulario">
+ <form action="{{ url_for('login') }}" method="post" class="formulario">
 
     <h1>Iniciar Sesión</h1>
     <div class="contenedor">
-
+      <input type="hidden" name="token" value="{{ session.token }}">
       <div class="input-contenedor">
         <i class="fa-solid fa-envelope icon"></i>
-        <input id="email" name="email" type="text" placeholder="Correo Electrónico">
+        <input id="email" name="email" type="text" placeholder="Correo Electrónico" required>
       </div>
 
       <div class="input-contenedor">
         <i class="fa-solid fa-key icon"></i>
-        <input id="pass" name="pass" type="password" placeholder="Contraseña">
+        <input id="pass" name="pass" type="password" placeholder="Contraseña" required>
       </div>
 
       <input type="submit" value="Continuar" class="button" onclick="login()" hr>
@@ -61,7 +61,7 @@
   </form>
 <!--End iniciar sesión-->
 
-<script src="/login/login.js"></script>
+<!--<script src="/login/login.js"></script>-->
 
 </body>
 </html>
