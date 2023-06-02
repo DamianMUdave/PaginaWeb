@@ -15,10 +15,10 @@ def login():
     if request.form['token'] != session['token']:
         return 'Token inválido'
     # Validar credenciales de usuario
-    username = request.form['username']
-    password = request.form['password']
-    if username == 'admin' and password == '123456':
-        return 'Bienvenido, {}'.format(username)
+    email = request.form['email']
+    password = request.form['pass']
+    if email == 'admin@hotmail.com' and password == '12345678':
+        return 'Bienvenido, {}'.format(email)
     else:
         return 'Usuario o contraseña incorrectos'
 
